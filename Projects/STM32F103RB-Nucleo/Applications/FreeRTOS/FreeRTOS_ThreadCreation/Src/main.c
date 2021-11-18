@@ -62,6 +62,7 @@ int main(void)
 
   /* Initialize LED */
   BSP_LED_Init(LED2);
+  BSP_LED_On(LED2);
  
   /* Thread 1 definition */
   osThreadDef(THREAD_1, LED_Thread1, osPriorityNormal, 0, configMINIMAL_STACK_SIZE);
